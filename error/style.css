@@ -1,0 +1,14 @@
+body{
+  padding: 0px;
+  margin: 0px;
+  background: #f2f4f8;
+  font-family: sans-serif;
+}
+h1{
+  width: 80%;
+  padding: 0px 10%;
+  display: block;
+  text-align: center;
+  color: #424448;
+  min-height: 80vh;
+}
