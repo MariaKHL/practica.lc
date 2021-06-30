@@ -21,11 +21,11 @@ Require all denied
 </FilesMatch>
 
 ## Стандартные страницы ошибок ##
-ErrorDocument 400 /app/storage/errorDocument/400.html
-ErrorDocument 401 /app/storage/errorDocument/401.html
-ErrorDocument 403 /app/storage/errorDocument/403.html
-ErrorDocument 404 /app/storage/errorDocument/404.html
-ErrorDocument 500 /app/storage/errorDocument/500.html
+ErrorDocument 400 /error/400.html
+ErrorDocument 401 /error/401.html
+ErrorDocument 403 /error/403.html
+ErrorDocument 404 /error/404.html
+ErrorDocument 500 /error/500.html
 
 
 ## Сжатие загружаемого контента ##
