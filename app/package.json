@@ -1,0 +1,46 @@
+{
+  "name": "practica IKBFU MO&AIS",
+  "version": "1.0.0",
+  "description": "Bundler package for practic in IKBFU.",
+  "private": true,
+  "scripts": {
+    "test": "-v"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MariaKHL/practica.git"
+  },
+  "keywords": [
+    "Web-framework",
+    "web-app",
+    "PHP",
+    "node",
+    "webpack",
+    "JS",
+    "ES6",
+    "HTML5",
+    "CSS3",
+    "SASS",
+    "SCSS"
+  ],
+  "author": "Khlystun Maria <hlystun.maria@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MariaKHL/practica/issues"
+  },
+  "homepage": "https://github.com/MariaKHL/practica#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-uglify-es": "^2.0.0",
+    "node-sass": "^5.0.0"
+  },
+  "dependencies": {}
+}
