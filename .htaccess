@@ -16,7 +16,7 @@ Deny from all
 </Files>
 
 ## Запрет на запрос определенного типа файлов ##
-<FilesMatch "(?i)((\.tpl|\.render|.twig|\.ini|\.log|\.clist|(?<!robots)\.txt))">
+<FilesMatch "(?i)((\.tpl|\.render|\.twig|\.ini|\.log|\.clist|(?<!robots)\.txt))">
 Require all denied
 </FilesMatch>
 
