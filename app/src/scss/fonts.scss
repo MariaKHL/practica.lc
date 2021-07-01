@@ -1,0 +1,141 @@
+// _fonts.scss
+
+/*font geometria*/
+@font-face {
+    font-family: 'geo';
+    src: url('/app/dist/f/geo/Geometria-NarrowExtraLight.eot');
+    src: local('Geometria-NarrowExtraLight'), local('Geometria NarrowExtraLight'),
+        url('/app/dist/f/geo/Geometria-NarrowExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('/app/dist/f/geo/Geometria-NarrowExtraLight.woff2') format('woff2'),
+        url('/app/dist/f/geo/Geometria-NarrowExtraLight.woff') format('woff'),
+        url('/app/dist/f/geo/Geometria-NarrowExtraLight.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'geo';
+    src: url('/app/dist/f/geo/Geometria-NarrowThin.eot');
+    src: local('Geometria-NarrowThin'), local('Geometria NarrowThin'),
+        url('/app/dist/f/geo/Geometria-NarrowThin.eot?#iefix') format('embedded-opentype'),
+        url('/app/dist/f/geo/Geometria-NarrowThin.woff2') format('woff2'),
+        url('/app/dist/f/geo/Geometria-NarrowThin.woff') format('woff'),
+        url('/app/dist/f/geo/Geometria-NarrowThin.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'geo';
+    src: url('/app/dist/f/geo/Geometria-NarrowLight.eot');
+    src: local('Geometria-NarrowLight'), local('Geometria NarrowLight'),
+        url('/app/dist/f/geo/Geometria-NarrowLight.eot?#iefix') format('embedded-opentype'),
+        url('/app/dist/f/geo/Geometria-NarrowLight.woff2') format('woff2'),
+        url('/app/dist/f/geo/Geometria-NarrowLight.woff') format('woff'),
+        url('/app/dist/f/geo/Geometria-NarrowLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'geo';
+    src: url('/app/dist/f/geo/Geometria-Narrow.eot');
+    src: local('Geometria-Narrow'), local('Geometria Narrow'),
+        url('/app/dist/f/geo/Geometria-Narrow.eot?#iefix') format('embedded-opentype'),
+        url('/app/dist/f/geo/Geometria-Narrow.woff2') format('woff2'),
+        url('/app/dist/f/geo/Geometria-Narrow.woff') format('woff'),
+        url('/app/dist/f/geo/Geometria-Narrow.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'geo';
+    src: url('/app/dist/f/geo/Geometria-NarrowMedium.eot');
+    src: local('Geometria-NarrowMedium'), local('Geometria NarrowMedium'),
+        url('/app/dist/f/geo/Geometria-NarrowMedium.eot?#iefix') format('embedded-opentype'),
+        url('/app/dist/f/geo/Geometria-NarrowMedium.woff2') format('woff2'),
+        url('/app/dist/f/geo/Geometria-NarrowMedium.woff') format('woff'),
+        url('/app/dist/f/geo/Geometria-NarrowMedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'geo';
+    src: url('/app/dist/f/geo/Geometria-NarrowBold.eot');
+    src: local('Geometria-NarrowBold'), local('Geometria NarrowBold'),
+        url('/app/dist/f/geo/Geometria-NarrowBold.eot?#iefix') format('embedded-opentype'),
+        url('/app/dist/f/geo/Geometria-NarrowBold.woff2') format('woff2'),
+        url('/app/dist/f/geo/Geometria-NarrowBold.woff') format('woff'),
+        url('/app/dist/f/geo/Geometria-NarrowBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'geo';
+    src: url('/app/dist/f/geo/Geometria-NarrowHeavy.eot');
+    src: local('Geometria-NarrowHeavy'), local('Geometria NarrowHeavy'),
+        url('/app/dist/f/geo/Geometria-NarrowHeavy.eot?#iefix') format('embedded-opentype'),
+        url('/app/dist/f/geo/Geometria-NarrowHeavy.woff2') format('woff2'),
+        url('/app/dist/f/geo/Geometria-NarrowHeavy.woff') format('woff'),
+        url('/app/dist/f/geo/Geometria-NarrowHeavy.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'geo';
+    src: url('/app/dist/f/geo/Geometria-NarrowExtraBold.eot');
+    src: local('Geometria-NarrowExtraBold'), local('Geometria NarrowExtraBold'),
+        url('/app/dist/f/geo/Geometria-NarrowExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('/app/dist/f/geo/Geometria-NarrowExtraBold.woff2') format('woff2'),
+        url('/app/dist/f/geo/Geometria-NarrowExtraBold.woff') format('woff'),
+        url('/app/dist/f/geo/Geometria-NarrowExtraBold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/*font awesome*/
+
+@font-face {
+    font-family: 'fa_brands';
+    src: url('/app/dist/f/fa/fa-brands-400.eot');
+    src: local('fa-brands'), local('fa brands'), /*FIX*/
+        url('/app/dist/f/fa/fa-brands-400.eot?#iefix') format('embedded-opentype'),
+        url('/app/dist/f/fa/fa-brands-400.woff2') format('woff2'),
+        url('/app/dist/f/fa/fa-brands-400.woff') format('woff'),
+        url('/app/dist/f/fa/fa-brands-400.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'fa_regular';
+    src: url('/app/dist/f/fa/fa-regular-400.eot');
+    src: local('fa-regular'), local('fa regular'), /*FIX*/
+        url('/app/dist/f/fa/fa-regular-400.eot?#iefix') format('embedded-opentype'),
+        url('/app/dist/f/fa/fa-regular-400.woff2') format('woff2'),
+        url('/app/dist/f/fa/fa-regular-400.woff') format('woff'),
+        url('/app/dist/f/fa/fa-regular-400.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'fa_solid';
+    src: url('/app/dist/f/fa/fa-solid-900.eot');
+    src: local('fa-solid'), local('fa solid'),
+        url('/app/dist/f/fa/fa-solid-900.eot?#iefix') format('embedded-opentype'),
+        url('/app/dist/f/fa/fa-solid-900.woff2') format('woff2'),
+        url('/app/dist/f/fa/fa-solid-900.woff') format('woff'),
+        url('/app/dist/f/fa/fa-solid-900.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
