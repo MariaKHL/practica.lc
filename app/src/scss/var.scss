@@ -1,0 +1,88 @@
+// _var.scss
+
+$color_primary : #afeaea;
+$color_complementary : #eaafaf;
+$color_analogous1 : #afeacc;
+$color_analogous2 : #afccea;
+$color_triadic1 : #afafea;
+$color_triadic2 : #eaafea;
+$color_link1 : #0084ff;
+$color_link2 : #0048ff;
+
+$color_opacity1 : rgba(0, 0, 0, .72);
+$color_opacity2 : rgba(0, 0, 0, .38);
+
+
+$font_ico : 'fa_brands', 'fa_regular', 'fa_solid';
+$font_main : 'geo', sans-serif;
+
+$transition_fler: .3s cubic-bezier(1, .2, 0, 1.18);
+$transition_classic: .14s linear;
+
+%fonts {
+  font-family: $font_ico, $font_main;
+}
+
+body{
+  @extend %fonts;
+  font-size: 1em;
+  font-weight: 400;
+  padding: 0px;
+  margin: 0px;
+}
+
+h1, h2, h3, h4, h5, h6, legend, p, span{
+  @extend %fonts;
+  font-size: 1em;
+  font-size: normal;
+}
+
+h1{
+  font-size: 2.4em;
+  font-weight: 800;
+}
+h2{
+  font-size: 2.1em;
+  font-weight: 700;
+}
+h3{
+  font-size: 1.7em;
+  font-weight: 700;
+}
+h4{
+  font-size: 1.4em;
+  font-weight: 700;
+}
+h5{
+  font-size: 1.06em;
+  font-weight: 600;
+}
+h6{
+  font-size: .88em;
+  font-weight: 500;
+}
+
+a{
+  @extend %fonts;
+  color: $color_link1;
+  transition: $transition_classic;
+}
+a:hover{
+  color: $color_link2;
+  transition: $transition_classic;
+}
+
+form{
+  @extend %fonts;
+  font-size: 1em;
+  legend{
+    @extend %fonts;
+    font-size: 1.1em;
+  }
+  input, button{
+    list-style: none;
+    @extend %fonts;
+    outline: none;
+    border: 1px $color_opacity2;
+  }
+}
