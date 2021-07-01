@@ -37,14 +37,17 @@
     */
     define('CLASS_MAIN', \App\Main::class);
 
-    if ( class_exists(CLASS_MAIN) && @is_file(FILE_MAIN) ) {
+    if (@is_file(FILE_MAIN)) {
       require_once FILE_MAIN;
-      $class = CLASS_MAIN;
-      $main = new $class();
-    }elseif (!class_exists(CLASS_MAIN)) {
-      throw new \Exception("Index: main class not found or was redefined!", 1);
     }else {
       throw new \Exception("Index: main file not found or path was redefined!", 1);
+    }
+
+    if ( class_exists(CLASS_MAIN)) {
+      $class = CLASS_MAIN;
+      $main = new $class();
+    }else {
+      throw new \Exception("Index: main class not found or was redefined!", 1);
     }
   } catch (\Exception $e) {
     print($e->getMessage());
