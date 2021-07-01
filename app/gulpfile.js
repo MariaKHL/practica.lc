@@ -99,8 +99,8 @@ function initWatch() {
 	watch( [ 'src/js/**/*.js', '!**/bundle.min.js'  ], 	scripts );
 	watch( [ 'src/scss/**/*.scss', 	'!**/bundle.min.css' ], 	styles 	);
 	watch( [ 'src/img/**/*', 		'!node_modules/**/*' ],		images 	);
-	watch( [ 'backend/**/*.html', 	'!**/bundle.min.html'] ).on('change', browserSync.reload);
-	watch( [ 'backend/**/*.php',  'view/**/*.php',		'!**/bundle.min.php' ] ).on('change', browserSync.reload);
+	watch( [ 'mvc/**/*.html', 	'!**/bundle.min.html'] ).on('change', browserSync.reload);
+	watch( [ 'mvc/**/*.php',  'view/**/*.php',		'!**/bundle.min.php' ] ).on('change', browserSync.reload);
 }
 
 // Экспорт таска browsersync.
