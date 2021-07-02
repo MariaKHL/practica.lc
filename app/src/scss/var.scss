@@ -16,12 +16,38 @@ $color_opacity2 : rgba(0, 0, 0, .38);
 $font_ico : 'fa_brands', 'fa_regular', 'fa_solid';
 $font_main : 'geo', sans-serif;
 
-$transition_fler: .3s cubic-bezier(1, .2, 0, 1.18);
+$transition_fler: .24s linear;
+// $transition_fler: .6s cubic-bezier(1, .2, 0, 1.18);
 $transition_classic: .14s linear;
 
 %fonts {
   font-family: $font_ico, $font_main;
 }
+
+%flexbox{
+  width: 80%;
+  padding: 2em 10%;
+  display: flex;
+  margin: auto;
+}
+
+%flex-row{
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+%flex-column{
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+%flex-start{
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
 
 body{
   @extend %fonts;

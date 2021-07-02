@@ -1,0 +1,19 @@
+api:
+  autoload: api
+  controller: \App\MVC\Controllers\API
+  template: api
+
+admin:
+  autoload: admin
+  controller: \App\MVC\Controllers\Admin
+  template: admin
+
+__empty:
+  autoload: website
+  controller: \App\MVC\Controllers\Website
+  template: website
+
+__string:
+  autoload: false
+  controller: \App\MVC\Controllers\Err404
+  template: err404

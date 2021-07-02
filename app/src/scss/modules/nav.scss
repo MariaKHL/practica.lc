@@ -1,0 +1,74 @@
+// _nav.scss
+
+nav{
+  @extend %flexbox;
+  padding: .64em 10%;
+  position: absolute;
+  top:0px;
+  left: 0px;
+  z-index: 9999;
+  a#logo{
+    img{
+      max-height: 48px;
+    }
+  }
+  a#logo:hover{
+    opacity: .7;
+  }
+}
+
+article.article.open{
+  transition: $transition_fler;
+  transform: translateX(0vw);
+}
+article.article{
+  @extend %flexbox;
+  @extend %flex-column;
+  @extend %flex-start;
+  padding: 2em 10%;
+  height: calc(100vh - 4em);
+  min-height: calc(100vh - 4em);
+  max-height: calc(100vh - 4em);
+  overflow-y: scroll;
+  position: fixed;
+  top:0px;
+  left: 0px;
+  z-index: 10000;
+  background: #fff;
+  transition: $transition_fler;
+  transform: translateX(110vw);
+
+  a#close{
+    text-decoration: none;
+    margin: 0em auto;
+    margin-right: 10%;
+    color: $color_analogous2;
+  }
+  a#close:hover{
+    color: $color_triadic2;
+  }
+  h1{
+    margin: 1em auto;
+    margin-bottom: 0em;
+  }
+  .article__content{
+    max-width: 50%;
+    margin: 1em auto;
+    text-align: left;
+    padding-bottom: 4em;
+  }
+}
+@media (max-width: 1241px){
+  article.article{
+
+    h1{
+      font-size: 1.6em;
+      font-weight: 600;
+    }
+
+    .article__content{
+      max-width: 90%;
+      font-size: 1.1em;
+    }
+  }
+}

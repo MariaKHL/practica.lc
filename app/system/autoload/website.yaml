@@ -1,0 +1,2 @@
+controller: '@mvc/controllers/website.php'
+model_articles : '@mvc/models/getArticles.php'

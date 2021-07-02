@@ -36,7 +36,10 @@
       }
 
       $builder->system;
-
+      $db = new \MongoDB\Client;
+      $db = $db->db_kinanet;
+      $route = new \App\System\Route\Router;
+      $app = $route->startApp($builder, $db);
     }
   }
 
