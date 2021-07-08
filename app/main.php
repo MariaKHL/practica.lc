@@ -16,10 +16,26 @@
 
   final class Main
   {
+    /**
+    * @var string FILE_BUILDER Путь до автозагрузчика
+    */
     private const FILE_BUILDER = DIR_APP . 'system' . DSE . 'builder.php';
 
+    /**
+    * @var string CLASS_BUILDER Имя класса автозагрузчика
+    */
     private const CLASS_BUILDER = System\Builder::class;
 
+
+    /**
+    * @method __construct(@param null|object $params = NULL)
+    * @param null|object $params = NULL Загрузочные параметры.
+    * @todo Загружает и инициирует автозагрузчик приложения,
+    * а также загружает приложение, к которому обратился клиент.
+    * @since 1.0.0
+    * @return void
+    * @throws Если файл автозагрузчика не найден.
+    */
     function __construct(?object $params = NULL)
     {
       if (@is_file(self::FILE_BUILDER)) {
@@ -36,7 +52,15 @@
       }
 
       $builder->system;
-      $db = new \MongoDB\Client;
+      $db = new \MongoDB\Client(
+        'mongodb://95.214.63.87:27017',
+        [
+          'username' => 'maria',
+          'password' => 'T2gSBwk*s',
+          // 'ssl' => true,
+          'authSource' => 'db_kinanet',
+        ]
+      );
       $db = $db->db_kinanet;
       $route = new \App\System\Route\Router;
       $app = $route->startApp($builder, $db);
